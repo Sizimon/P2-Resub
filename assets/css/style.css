@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/*------------------------------ GENERAL */
+
+body {
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*------------------------------ COLORS */
+
+.bg-heading {
+    background-color: #2F322F;
+}
+
+
+/*------------------------------ HEADING */
+
+header {
+    display: flex;
+    margin: 0;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 10px;
+    font-family: 'Exo', sans-serif;
+    color: #fafafa;
+}
+
+.menu-content {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    display: inline;
+    margin: 0 10px;
+    color: #fafafa;
+}
+
+/*------------------------------ CHOICES SECTION */
+
