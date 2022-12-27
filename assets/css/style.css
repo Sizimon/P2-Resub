@@ -11,10 +11,21 @@ body {
     text-transform: uppercase;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
 /*------------------------------ COLORS */
 
 .bg-heading {
     background-color: #2F322F;
+}
+
+.bg-choice {
+    background-color: #444744
 }
 
 
@@ -53,3 +64,42 @@ header {
 
 /*------------------------------ CHOICES SECTION */
 
+.choice-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.choice-heading {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: #fafafa;
+}
+
+.choice {
+    height: 40%;
+    width: 40%;
+}
+
+.choice img {
+    height: 40%;
+    width: 40%;
+}
+
+.choices-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.game-result {
+    color: #fafafa;
+    font-size: 32px;
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid #fafafa;
+}
+
+.game-result-container {
+    margin-bottom: 20px;
+}
