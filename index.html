@@ -21,21 +21,21 @@
     <section class="choice-section bg-choice">
         <h2 class="choice-heading uppercase">Make your Pick</h2>
         <div class="choices-container">
-            <span class="choice">
+            <span class="choice" data-choice="rock">
                 <img src="./assets/images/rock.png" alt="Rock">
             </span>
-            <span class="choice">
+            <span class="choice" data-choice="paper">
                 <img src="./assets/images/paper.png" alt="Paper">
             </span>
-            <span class="choice">
+            <span class="choice" data-choice="scissors">
                 <img src="./assets/images/scissors.png" alt="Scissors">
             </span>
         </div>
-        <div class="game-result-container">
-            <p class="game-result uppercase">WIN</p>
+        <div class="game-result-container win-lose-draw">
+            <p id="display-result" class="game-result uppercase">WIN</p>
         </div>
     </section>
-    <section class="result-section bg-heading">
+    <section class="result-section bg-heading result">
         <div class="scoreboard">
             <h2 id="playername">YOU</h2>
             <span class="score" data-your-score>0</span>

@@ -129,4 +129,14 @@ header {
     align-items: center;
     justify-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.result-choice {
+    text-align: center;
+}
+
+.result-choice img {
+    height: 30%;
+    width: 30%;
 }
