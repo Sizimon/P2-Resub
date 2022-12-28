@@ -98,3 +98,21 @@ function isWinner(choice, computerChoice) {
 function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
 }
+
+/* Modal */
+
+var modal = document.getElementById("rulesModal");
+var btn = document.getElementById("rulesModalBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

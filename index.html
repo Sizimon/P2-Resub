@@ -8,16 +8,18 @@
     <title>Mundane RPS | A hyper-realistic simulation of rock-paper-scissors.</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header class="bg-heading">
         <h1 class="uppercase logo">Mundane RPS</h1>
         <nav class="menu">
             <ul class="menu-content uppercase">
-                <li class="menu-item">Rules</li>
+                <li class="menu-item"><button id="rulesModalBtn">Rules</button></li>
                 <li class="menu-item">History</li>
                 <li class="menu-item">Reset</li>
             </ul>
         </nav>
     </header>
+    <!-- PLAYER CHOICES / ROUND RESULT -->
     <section class="choice-section bg-choice">
         <h2 class="choice-heading uppercase">Make your Pick</h2>
         <div class="choices-container">
@@ -35,6 +37,7 @@
             <p id="display-result" class="game-result uppercase">WIN</p>
         </div>
     </section>
+    <!-- SCOREBOARD / PAST ROUNDS -->
     <section class="result-section bg-heading result">
         <div class="scoreboard">
             <h2 id="playername">YOU</h2>
@@ -45,6 +48,27 @@
             <span class="score" data-computer-score>0</span>
         </div>
     </section>
+    <!-- MODAL -->
+    <div id="rulesModal" class="modal">
+        <div class="modal-content uppercase">
+            <div class="modal-header">
+                <h2>Mundane Rules</h2>
+            </div>
+            <div class="modal-body">
+                <p>The rules of Mundane RPS are as you would expect.<br>
+                    Rock beats Scissors.<br>
+                    Paper beats Rock.<br>
+                    Scissors beats Paper.
+                </p>
+                <p>To reset the game, click the RESET button at the top right of the page.</p>
+                <p>To view your match history, click the HISTORY button next to the reset button.</p>
+            </div>
+            <div class="modal-footer">
+                <h2 class="uppercase">Good luck, Playername.</h2>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
     <script src="./assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/cf17e0f875.js" crossorigin="anonymous"></script>   
 </body>
