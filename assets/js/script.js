@@ -116,3 +116,17 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/* RESET GAME */
+
+const matchResult = document.getElementById('display-result')
+
+function resetGame() {
+    yourScoreSpan.innerText = '0';
+    computerScoreSpan.innerText = '0';
+    matchResult.innerText = 'RESULT';
+    const resets = document.querySelectorAll('.result-choice', 'winner');
+    resets.forEach(reset => {
+        reset.remove();
+    });
+}
