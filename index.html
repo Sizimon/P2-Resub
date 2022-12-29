@@ -13,8 +13,8 @@
         <h1 class="uppercase logo">Mundane RPS</h1>
         <nav class="menu">
             <ul class="menu-content uppercase">
-                <li class="menu-item"><button id="rulesModalBtn">Rules</button></li>
-                <li class="menu-item">History</li>
+                <li class="menu-item"><button id="rules-modal-btn">Rules</button></li>
+                <li class="menu-item"><button id="history-modal-btn">History</button></li>
                 <li class="menu-item"><button onclick="resetGame()">Reset</button></li>
             </ul>
         </nav>
@@ -48,8 +48,9 @@
             <span class="score" data-computer-score>0</span>
         </div>
     </section>
-    <!-- MODAL -->
-    <div id="rulesModal" class="modal">
+    <!-- MODALS -->
+    <!-- Modal For Rules -->
+    <div id="rules-modal" class="modal">
         <div class="modal-content uppercase">
             <div class="modal-header">
                 <h2>Mundane Rules</h2>
@@ -58,7 +59,8 @@
                 <p>The rules of Mundane RPS are as you would expect.<br>
                     Rock beats Scissors.<br>
                     Paper beats Rock.<br>
-                    Scissors beats Paper.
+                    Scissors beats Paper.<br>
+                    The first to win three rounds, is the winner.
                 </p>
                 <p>To reset the game, click the RESET button at the top right of the page.</p>
                 <p>To view your match history, click the HISTORY button next to the reset button.</p>
@@ -66,6 +68,62 @@
             <div class="modal-footer">
                 <h2 class="uppercase">Good luck, Playername.</h2>
                 <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+    <!-- Modal For Match History -->
+    <div id="history-modal" class="modal">
+        <div class="modal-content uppercase">
+            <div class="modal-header">
+                <h2>Result History</h2>
+            </div>
+            <div class="modal-body">
+                <div class="result-history-wins">
+                    <h2>Wins</h2>
+                    <p>#</p>
+                </div>
+                <div class="result-history-losses">
+                    <h2>Losses</h2>
+                    <p>#</p>
+                </div>
+                <div class="result-history-ties">
+                    <h2>Ties</h2>
+                    <p>#</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <h2 class="uppercase">Good luck, Playername.</h2>
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+    <!-- Round Win Modal -->
+    <div id="win-modal" class="modal">
+        <div class="modal-content uppercase">
+            <div class="modal-header">
+                <h2>Match Over</h2>
+            </div>
+            <div class="modal-body">
+                <p>You Win!</p>
+            </div>
+            <div class="modal-footer">
+                <h2 class="uppercase">You're so skilled Playername!</h2>
+                <span onclick="closeModalWin()" class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+    <!-- Round Lose Modal -->
+    <div id="lose-modal" class="modal">
+        <div class="modal-content uppercase">
+            <div class="modal-header">
+                <h2>Match Over</h2>
+            </div>
+            <div class="modal-body">
+                <p>You Lose!</p>
+            </div>
+            <div class="modal-footer">
+                <h2 class="uppercase">Don't give up Playername!</h2>
+                <span onclick="closeModalLose()" class="close">&times;</span>
             </div>
         </div>
     </div>

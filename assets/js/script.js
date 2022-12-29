@@ -50,9 +50,9 @@ function makeChoice(choice) {
     if (computerWin) incrementScore(computerScoreSpan);
 
     if (yourScoreSpan.innerHTML == '3') {
-        openPopupWinner();
+        openModalWin();
     } else if (computerScoreSpan.innerHTML == '3') {
-        openPopupLoser();
+        openModalLose();
     }
 
 /**
@@ -99,10 +99,11 @@ function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
 }
 
-/* Modal */
+/* MODALS */
 
-var modal = document.getElementById("rulesModal");
-var btn = document.getElementById("rulesModalBtn");
+/* Rules Modal */ 
+var modal = document.getElementById("rules-modal");
+var btn = document.getElementById("rules-modal-btn");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
@@ -115,6 +116,49 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+} 
+
+/* History Modal */ 
+var modalHistory = document.getElementById("history-modal");
+var btnHistory = document.getElementById("history-modal-btn");
+var spanHistory = document.getElementsByClassName("close")[1];
+
+btnHistory.onclick = function() {
+  modalHistory.style.display = "block";
+}
+spanHistory.onclick = function() {
+  modalHistory.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modalHistory) {
+    modalHistory.style.display = "none";
+  }
+}
+
+/* Win Modal */ 
+
+function openModalWin() {
+    const winModal = document.getElementById("win-modal");
+    winModal.style.display = "block";
+}
+
+function closeModalWin() {
+    const winModal = document.getElementById("win-modal");
+    winModal.style.display = "none";
+    resetGame();
+}
+
+/* Lose Modal */ 
+
+function openModalLose() {
+    const loseModal = document.getElementById("lose-modal");
+    loseModal.style.display = "block";
+}
+
+function closeModalLose() {
+    const loseModal = document.getElementById("lose-modal");
+    loseModal.style.display = "none"
+    resetGame();
 }
 
 /* RESET GAME */
