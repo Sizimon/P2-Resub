@@ -36,6 +36,7 @@ choiceButtons.forEach(choiceButton => {
  * Creates the make choice function which is called on click in the code above
  * the function makes the computer make a random choice
  * determines the winner and calls the addChoiceResult function to display the match
+ * Also updates the history tab according to wins/losses
  * @param {*} choice 
  */
 
@@ -43,6 +44,8 @@ function makeChoice(choice) {
     const computerChoice = randomChoice();
     const youWin = isWinner(choice, computerChoice);
     const computerWin = isWinner(computerChoice, choice);
+    const historyWin = document.getElementById("history-win")
+    const historyLose = document.getElementById("history-lose")
 
     addChoiceResult(computerChoice, computerWin);
     addChoiceResult(choice, youWin);
@@ -51,8 +54,10 @@ function makeChoice(choice) {
 
     if (yourScoreSpan.innerHTML == '3') {
         openModalWin();
+        historyWin.innerText = parseInt(historyWin.innerText) +1;  
     } else if (computerScoreSpan.innerHTML == '3') {
         openModalLose();
+        historyLose.innerText = parseInt(historyLose.innerText) +1;
     }
 
 /**
@@ -139,7 +144,7 @@ window.onclick = function(event) {
 
 function openModalWin() {
     const winModal = document.getElementById("win-modal");
-    winModal.style.display = "block";
+    winModal.style.display = "block";  
 }
 
 function closeModalWin() {
@@ -153,6 +158,7 @@ function closeModalWin() {
 function openModalLose() {
     const loseModal = document.getElementById("lose-modal");
     loseModal.style.display = "block";
+
 }
 
 function closeModalLose() {
