@@ -43,6 +43,9 @@ h4 {
     background-color: #444744
 }
 
+.heading-yellow {
+    color: #FFE84A;
+}
 
 /*------------------------------ HEADING */
 
@@ -62,7 +65,7 @@ header {
 .logo {
     margin-left: 10px;
     font-family: 'Exo', sans-serif;
-    color: #fafafa;
+    color: #FFE84A;
 }
 
 .menu-content {
@@ -75,6 +78,12 @@ header {
     display: inline;
     margin: 0 10px;
     color: #fafafa;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    transition: .7s ease-in-out;
+    color: #FFE84A;
 }
 
 /*------------------------------ CHOICES SECTION */
@@ -236,12 +245,13 @@ header {
 
 #name-submit:hover,
 #name-submit:focus {
-    color: yellow;
+    color: #FFE84A;
+    transform: .7s;
 }
 
 /* MEDIA QUERIES FOR SMALL PHONES */
 
-@media screen and (min-width: 280px) and (max-width: 480px) {
+@media screen and (min-width: 280px) {
     .game-result {
         width: 30%;
         font-size: 16px;
@@ -271,12 +281,43 @@ header {
 
 /* MEDIA QUERIES FOR TABLETS */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) {
+   .game-result {
+    width: 30%;
+    font-size: 20px;
+   }
+}
+
+/* MEDIA QUERIES FOR SMALL LAPTOPS */
+
+@media screen and (min-width: 768px) {
+    .menu-content,
+    .menu-item {
+        display: inline;
+    }
+
+    .menu-item {
+        font-size: 20px;
+    }
+
     .logo {
         font-size: 42px;
     }
 
-    .menu-item {
+    .game-result {
+        width: 20%;
         font-size: 24px;
+    }
+
+    .modal-content {
+        width: 60%;
+    }
+}
+
+/* MEDIA QUERIES FOR LAPTOPS */
+
+@media screen and (min-width: 1024px) {
+    .game-result {
+        font-size: 32px;
     }
 }
