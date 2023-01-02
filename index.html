@@ -40,7 +40,7 @@
     <!-- SCOREBOARD / PAST ROUNDS -->
     <section class="result-section bg-heading result">
         <div class="scoreboard">
-            <h2 id="playername">YOU</h2>
+            <h2 id="playername" class="uppercase">YOU</h2>
             <span class="score" data-your-score>0</span>
         </div>
         <div class="scoreboard" data-column>
@@ -49,6 +49,24 @@
         </div>
     </section>
     <!-- MODALS -->
+    <!-- Landing Modal -->
+    <div id="landing-modal" class="modal">
+        <div class="modal-content uppercase">
+            <div class="modal-header">
+                <h2>Welcome to Mundane RPS!</h2>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="return false">
+                    <label for="name">Please enter your name</label><br>
+                    <input id="name" class="uppercase" type="text" aria-label="Name Input" required><br>
+                    <button id="name-submit" type="submit" onclick="submitName()">CONFIRM</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <h2 class="uppercase">Good luck, Playername.</h2>
+            </div>
+        </div>
+    </div>
     <!-- Modal For Rules -->
     <div id="rules-modal" class="modal">
         <div class="modal-content uppercase">
@@ -99,7 +117,7 @@
                 <h2>Match Over</h2>
             </div>
             <div class="modal-body">
-                <p>You Win!</p>
+                <h1>You Win!</h1>
             </div>
             <div class="modal-footer">
                 <h2 class="uppercase">You're so skilled Playername!</h2>
@@ -114,7 +132,7 @@
                 <h2>Match Over</h2>
             </div>
             <div class="modal-body">
-                <p>You Lose!</p>
+                <h1>You Lose!</h1>
             </div>
             <div class="modal-footer">
                 <h2 class="uppercase">Don't give up Playername!</h2>

@@ -163,7 +163,7 @@ function openModalLose() {
 
 function closeModalLose() {
     const loseModal = document.getElementById("lose-modal");
-    loseModal.style.display = "none"
+    loseModal.style.display = "none";
     resetGame();
 }
 
@@ -179,4 +179,15 @@ function resetGame() {
     resets.forEach(reset => {
         reset.remove();
     });
+}
+
+/* LANDING POPUP */
+/* Lets the user input their name into the form and has it stored in local storage to use in scoreboard */
+function submitName() {
+    const inputName = document.getElementById('name');
+    localStorage.setItem('name', inputName.value);
+    const popupBox = document.getElementById('landing-modal');
+    popupBox.style.display = "none";
+    const playerName = document.getElementById('playername');
+    playerName.innerHTML = localStorage.getItem('name');
 }

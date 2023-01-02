@@ -206,3 +206,36 @@ header {
     text-decoration: none;
     cursor: pointer;
   }
+
+/* LANDING MODAL */
+
+  #landing-modal {
+    display: block;
+  }
+
+  #name {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fafafa;
+    outline: none;
+    color: #fafafa;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #name-submit {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: #fafafa;
+    background: none;
+    font-size: 18px;
+}
+
+#name-submit:hover,
+#name-submit:focus {
+    color: yellow;
+}
+
