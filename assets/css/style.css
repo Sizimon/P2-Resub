@@ -24,6 +24,15 @@ h4 {
     cursor: pointer;
 }
 
+.result-choice {
+    opacity: .5;
+}
+
+.winner {
+    opacity: 1;
+}
+
+
 /*------------------------------ COLORS */
 
 .bg-heading {
