@@ -1,108 +1,189 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# MUNDANE RPS
 
-Welcome Sizimon,
+This is a rock paper scissors game with a minimal approach to make it as simple as the real game is.
+These are some functions to look for.
+* Player assigned username
+* Rules and intro popup interface
+* End of game and reset popup interface
+* A match histroy section to display past results
+* Scoreboard and match result tracking
+* Responsive design
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### The Design of the Webpage: 
+* The design of the page caters to the fact it is simple and pleasing to look at, with a simple game to pass the time.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+To view the deployed project click [here](https://sizimon.github.io/P2/). #CHANGE THIS
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Screenshot](readme-images/responsiveness.png) # CHANGE THIS
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#  UXD
 
-A blue button should appear to click: _Make Public_,
+### Website Intentions
+* The intentions of the website is simplicity and functionality, the website intends to offer a simple game, with a neutral color palette and leave a relaxing impression on the user. All while offering a fun simple game of chance.
 
-Another blue button should appear to click: _Open Browser_.
+#### For The User
+* A clear direction of where to click to get the desired result, with a natural flow of information as the user plays the game, minimal buttons, just to keep it simple.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### For The Developer
+* The process was intended to be more mechanically enticing. I built this project as simple as possible, so it would help not only the user enjoy a simple game, but for me as a beginner developer to come to a better understanding with how HTML,CSS and Javascript come together to make things happen.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+# PROCESS
 
-## Release History
+* The design process was helped by WebDevSimplified, who put together a great video which created a simple RPS game, I took influence from him in order to get my ideas for the webpage.
+* After getting some starting code and sitting to understand how it functions and comes together (also fixing bug issues with the tutorial code), it helped me really understand JS better, from then on I started adding my own features and customising and editting any other code I borrowed (mentioned in the script JS file).
+* The fonts and colors I used were kept minimal, but complimented eachother well. The popups in the page were not invasive and easy to navigate around.
+* The simple design created an atmosphere where I was left clicking and resetting for some time, just because of how pleasing the page was to look at for the eye.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# PAGE FEATURES
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Intro Popup 
+* The intro screen when the page load is displayed and gives basic information about the game. 
+* It also adds a name input with a submit button, which stores the name written by the player into the localstorage, which is later used to set the players name within the game according to the input.
+![Screenshot](readme-images/intro.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Game Screen 
+* The Game screen after inputting name in the intro screen.
+* Features a clean minimal design, with a; title, clear options to select and a scoreboard.
+![Screenshot](readme-images/gamescreen.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Round Result 
+* How the round played out is displayed just below the selections, and tells you whether you won/lost or if the game was a draw.
+![Screenshot](readme-images/roundresult.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
+## Match History
+* After clicking the selection of choice and the round ends, the result is displayed in the match history.
+![Screenshot](readme-images/match-history.png)
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Game End
+* The Game ends when someone reaches the score of 3 (either the computer or player).
+* When this happens the popup appears informing you whether you won or lost.
+* In this popup there is also a button which instructs the user to reset the game.
+* The reset button resets the match result, match history, scoreboard and takes away the end game popup.
+![Screenshot](readme-images/roundresult2.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+# DESIGN CHANGES
+There were design changes related to media queries and some technical issues:
+* Had to remove the intro message and just leaves the rules in the intro popup on smaller devices, there was an issue with the amount of content there.
+* There were some more design changes related to media query issues, however these were minimal and mainly included resizing fonts and moving some elements with margins.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
+
+# FUTURE FEATURES
+These are the features I would like to include in the game:
+* A match selection screen (where one can pick from best of 3, best to 3, and one in a chamber)
+* A window on the corner of the screen which displays the past 3 match results (e.g 3-2)
+
+
+
+
+# TESTING
+## HTML:
+![Screenshot](readme-images/htmlval.png)
+There was one minor error popup about the form not needing a type attribute, that was quickly fixed and the HTML passed the validator.
+
+
+
+
+## CSS:
+![Screenshot](readme-images/cssval.png)
+The CSS passed flawlessly.
+
+
+
+
+## JS:
+![Screenshot](readme-images/jsval.png)
+JS also passed with no errors other than some missing semicolons which were fixed, the highlighted unused variables are called in HTML button onclick attributes.
+
+
+
+
+## Lighthouse (Mobile):
+![Screenshot](readme-images/lighthousemobile.png)
+
+
+
+
+## Lighthouse (Desktop):
+![Screenshot](readme-images/lighthousedesktop.png)
+
+
+
+
+## BUGS:
+I had issues with trying to display the images in the the match history box, instead of the selection being displayed as the image, it was showing the filepath, I was trying to resolve it for hours, and the following code was the fix. 
+``` const imgID = choice.image;
+    const img = document.createElement('img');
+    img.src = imgID;
+    const div = document.createElement('div');
+    div.appendChild(img); 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
+# SITE DEPLOYMENT:
+### TO DEPLOY THE SITE
+1. In the GitHub repository of the website, go to the "Settings".
+2. In the menu on the left side of the screen, go to the "Code and Automation" section and click on "Pages".
+3. Under the GitHub Pages, select the Main Branch from the dropdown menu.
+4. Optionally select the folder in the following dropdown menu.
+5. Save and automatically the site is published.
+
+
+# CREDITS: 
+## CODE:
+[Guide](https://www.youtube.com/c/EasyTutorialsVideo) by EasyTutorials to help with the CSS aspect of popup boxes.
+
+[Tutorial](https://github.com/WebDevSimplified/Rock-Paper-Scissors-In-JavaScript/blob/master/script.js) video by WebDevSimplified which help with the first few steps to understanding how to make an RPS.
+
+
+
+## TESTING:
+[PageSpeed](https://pagespeed.web.dev/) for Performance Testing.
+
+[Google](https://fonts.google.com/) Fonts for fonts.
+
+[UI](https://ui.dev/amiresponsive?url=https://sizimon.github.io/P2/) for Responsiveness checking.
+
+My Code Institute Tutor [Rahal](https://rahullakhanpal.in), for helping me analyse my project and see what needs improving.
+
+
+
+## DESIGN:
+[Nightwolfdezines](https://www.vecteezy.com/members/nightwolfdezines) for providing the images used as selection buttons.
+
+
+
+[Clippy](https://bennettfeely.com/clippy/) an application for clip-path-making.
+
+
+
+[Favicon](https://favicon.io/) website which helped convert an image for a favicon.
+
