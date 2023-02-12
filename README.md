@@ -15,7 +15,7 @@ These are some functions to look for.
 
 To view the deployed project click [here](https://sizimon.github.io/P2-Resub/). 
 
-![Screenshot](readme-images/responsiveness.png) 
+![Screenshot](readme-images/resposiveness.png) 
 
 
 
@@ -80,8 +80,7 @@ To view the deployed project click [here](https://sizimon.github.io/P2-Resub/).
 ## Game End
 * The Game ends when someone reaches the score of 3 (either the computer or player).
 * When this happens the popup appears informing you whether you won or lost.
-* In this popup there is also a button which instructs the user to reset the game.
-* The reset button resets the match result, match history, scoreboard and takes away the end game popup.
+* Upon closing this popup, the match resets.
 ![Screenshot](readme-images/match-over.png) 
 
 # Navigation Bar Elements
@@ -101,9 +100,7 @@ To view the deployed project click [here](https://sizimon.github.io/P2-Resub/).
 
 
 # DESIGN CHANGES
-There were design changes related to media queries and some technical issues:
-* Had to remove the intro message and just leaves the rules in the intro popup on smaller devices, there was an issue with the amount of content there.
-* There were some more design changes related to media query issues, however these were minimal and mainly included resizing fonts and moving some elements with margins.
+Due to this being my resubmission project the only real design changes were to assist my issues with responsiveness on some devices, the CSS overhaul as previously mention let me be more in control with my responsiveness, and took less work to get the required result. 
 
 
 
