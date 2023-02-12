@@ -100,7 +100,7 @@ To view the deployed project click [here](https://sizimon.github.io/P2-Resub/).
 
 
 # DESIGN CHANGES
-Due to this being my resubmission project the only real design changes were to assist my issues with responsiveness on some devices, the CSS overhaul as previously mention let me be more in control with my responsiveness, and took less work to get the required result. 
+Due to this being my resubmission project the only real design changes were to assist my issues with responsiveness on some devices, the CSS overhaul as previously mention let me be more in control with my responsiveness, and took less work to get the required result. (SINCE THE PROJECT WAS FAILED ONLY BASED OFF "Inaccessible input field to progress, Defensive programming", THIS WAS A CRUCIAL OVERHAULT TO MAKE SURE USERS ARE NOT LOCKED OUT FROM THE WEBSITE) 
 
 
 
