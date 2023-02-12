@@ -44,8 +44,8 @@ function makeChoice(choice) {
     const computerChoice = randomChoice();
     const youWin = isWinner(choice, computerChoice);
     const computerWin = isWinner(computerChoice, choice);
-    const historyWin = document.getElementById("history-win")
-    const historyLose = document.getElementById("history-lose")
+    const historyWin = document.getElementById("history-win");
+    const historyLose = document.getElementById("history-lose");
 
     addChoiceResult(computerChoice, computerWin);
     addChoiceResult(choice, youWin);
@@ -113,15 +113,15 @@ var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
   modal.style.display = "block";
-}
+};
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-} 
+};
 
 /* History Modal */ 
 var modalHistory = document.getElementById("history-modal");
@@ -130,15 +130,15 @@ var spanHistory = document.getElementsByClassName("close")[1];
 
 btnHistory.onclick = function() {
   modalHistory.style.display = "block";
-}
+};
 spanHistory.onclick = function() {
   modalHistory.style.display = "none";
-}
+};
 window.onclick = function(event) {
   if (event.target == modalHistory) {
     modalHistory.style.display = "none";
   }
-}
+};
 
 /* Win Modal */ 
 
@@ -169,7 +169,7 @@ function closeModalLose() {
 
 /* RESET GAME */
 
-const matchResult = document.getElementById('display-result')
+const matchResult = document.getElementById('display-result');
 
 function resetGame() {
     yourScoreSpan.innerText = '0';

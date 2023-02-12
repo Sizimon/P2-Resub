@@ -13,9 +13,9 @@ These are some functions to look for.
 * The design of the page caters to the fact it is simple and pleasing to look at, with a simple game to pass the time.
 
 
-To view the deployed project click [here](https://sizimon.github.io/P2/). #CHANGE THIS
+To view the deployed project click [here](https://sizimon.github.io/P2-Resub/). 
 
-![Screenshot](readme-images/responsiveness.png) # CHANGE THIS
+![Screenshot](readme-images/responsiveness.png) 
 
 
 
@@ -37,9 +37,10 @@ To view the deployed project click [here](https://sizimon.github.io/P2/). #CHANG
 # PROCESS
 
 * The design process was helped by WebDevSimplified, who put together a great video which created a simple RPS game, I took influence from him in order to get my ideas for the webpage.
-* After getting some starting code and sitting to understand how it functions and comes together (also fixing bug issues with the tutorial code), it helped me really understand JS better, from then on I started adding my own features and customising and editting any other code I borrowed (mentioned in the script JS file).
+* Since this is my resubmission project, I was simply polishing my exisiting code, making sure the UI has a clean appeal with no errors to be encountered by the user, especially regarding responsiveness.
 * The fonts and colors I used were kept minimal, but complimented eachother well. The popups in the page were not invasive and easy to navigate around.
 * The simple design created an atmosphere where I was left clicking and resetting for some time, just because of how pleasing the page was to look at for the eye.
+
 
 
 
@@ -49,29 +50,29 @@ To view the deployed project click [here](https://sizimon.github.io/P2/). #CHANG
 ## Intro Popup 
 * The intro screen when the page load is displayed and gives basic information about the game. 
 * It also adds a name input with a submit button, which stores the name written by the player into the localstorage, which is later used to set the players name within the game according to the input.
-![Screenshot](readme-images/intro.png)
+![Screenshot](readme-images/intro.png)  
 
 
 
 
 ## Game Screen 
 * The Game screen after inputting name in the intro screen.
-* Features a clean minimal design, with a; title, clear options to select and a scoreboard.
-![Screenshot](readme-images/gamescreen.png)
+* Features a clean minimal design, with a title, clear options to select and a scoreboard.
+![Screenshot](readme-images/gamescreen.png) 
 
 
 
 
 ## Round Result 
 * How the round played out is displayed just below the selections, and tells you whether you won/lost or if the game was a draw.
-![Screenshot](readme-images/roundresult.png)
+![Screenshot](readme-images/roundresult.png) 
 
 
 
 
 ## Match History
 * After clicking the selection of choice and the round ends, the result is displayed in the match history.
-![Screenshot](readme-images/match-history.png)
+![Screenshot](readme-images/match-history.png) 
 
 
 
@@ -81,7 +82,20 @@ To view the deployed project click [here](https://sizimon.github.io/P2/). #CHANG
 * When this happens the popup appears informing you whether you won or lost.
 * In this popup there is also a button which instructs the user to reset the game.
 * The reset button resets the match result, match history, scoreboard and takes away the end game popup.
-![Screenshot](readme-images/roundresult2.png)
+![Screenshot](readme-images/match-over.png) 
+
+# Navigation Bar Elements
+* The navigation bar is simple and easy to understand, consisting of three elements.
+* The Rules Button: A button which will call a popup modal to display the rules of the game to the player.
+* The History Button: A button which will call a popup modal to display a scoreboard of games the players has won or lost. 
+* The Reset Button: A button which will reset the round score and round history display, in effect resetting the round.
+## Rules Modal
+![Screenshot](readme-images/rules-modal.png)
+* The rules modal which shows the rules of the game to the user.
+## Game Score History
+![Screenshot](readme-images/game-score-history.png)
+* The game history modal which shows score based of matches won.
+
 
 
 
@@ -137,13 +151,16 @@ JS also passed with no errors other than some missing semicolons which were fixe
 
 
 ## BUGS:
-I had issues with trying to display the images in the the match history box, instead of the selection being displayed as the image, it was showing the filepath, I was trying to resolve it for hours, and the following code was the fix. 
+* I had issues with trying to display the images in the the match history box, instead of the selection being displayed as the image, it was showing the filepath, I was trying to resolve it for hours, and the following code was the fix. 
 ``` const imgID = choice.image;
     const img = document.createElement('img');
     img.src = imgID;
     const div = document.createElement('div');
     div.appendChild(img); 
 ```
+
+* There was another issue with the user being able to submit the form to collect their name without any input, this was resolved using the checkValidity() function on the form input.
+* There were some other issues in responsiveness, therefore I devided to fix the styling by doing a CSS overhaul and creating a more flexible stylesheet, which resulted in less complex media queries.
 
 
 
@@ -179,11 +196,4 @@ My Code Institute Tutor [Rahal](https://rahullakhanpal.in), for helping me analy
 ## DESIGN:
 [Nightwolfdezines](https://www.vecteezy.com/members/nightwolfdezines) for providing the images used as selection buttons.
 
-
-
-[Clippy](https://bennettfeely.com/clippy/) an application for clip-path-making.
-
-
-
 [Favicon](https://favicon.io/) website which helped convert an image for a favicon.
-

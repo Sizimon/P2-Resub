@@ -246,7 +246,6 @@ header {
 #name-submit:hover,
 #name-submit:focus {
     color: #FFE84A;
-    transform: .7s;
 }
 
 /* MEDIA QUERIES FOR SMALL PHONES */
